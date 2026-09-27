@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tina Panahi - Digital Card</title>
+    <style>
+        /* تنظیمات کل صفحه */
+        body {
+            background-color: #f7f5ed;
+            /* رنگ پس‌زمینه کرم روشن */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* کارت اصلی */
+        .card-container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            padding: 30px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* تیتر بالای تصویر */
+        .welcome-text {
+            color: #2c2c2c;
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        /* تصویر بالای کارت */
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 14px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            margin-bottom: 25px;
+        }
+
+        /* نام و نام خانوادگی */
+        .name {
+            font-size: 28px;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin: 0 0 8px 0;
+        }
+
+        /* رشته و دانشگاه */
+        .subtitle {
+            font-size: 15px;
+            color: #4a4a4a;
+            margin: 0 0 4px 0;
+        }
+
+        .university {
+            font-size: 13px;
+            color: #8c8c8c;
+            margin-bottom: 25px;
+        }
+
+        /* خط جداکننده */
+        .divider {
+            border: none;
+            height: 1px;
+            background-color: #e5e3da;
+            margin: 20px 0;
+        }
+
+        /* بخش مهارت‌ها */
+        .section-title {
+            font-size: 15px;
+            color: #2c2c2c;
+            margin-bottom: 15px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+
+        .skill-tag {
+            background-color: #c0cbba;
+            /* رنگ سبز زیتونی/کاهویی ملایم طبق تصویر */
+            color: #2e3b2b;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        /* لینک‌های شبکه‌های اجتماعی */
+        .social-links {
+            font-size: 14px;
+            color: #333333;
+            margin-bottom: 25px;
+        }
+
+        .social-links a {
+            color: #333333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* فوتر */
+        .footer {
+            font-size: 11px;
+            color: #8c8c8c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card-container">
+        <!-- ۱. تیتر خوش‌آمدگویی -->
+        <div class="welcome-text">Welcome to my digital card</div>
+
+        <!-- ۲. تصویر بالای کارت -->
+        <img src="photo_۲۰۲۶-۰۹-۲۷_۰۸-۵۴-۳۷.jpg" class="card-image">
+
+        <!-- ۳. نام، رشته و اسم درس/دانشگاه -->
+        <h1 class="name">Tina Panahi</h1>
+        <div class="subtitle">Computer Engineering Student</div>
+        <div class="university">Charkhe Niloofari of Azarbaijan university</div>
+
+        <hr class="divider">
+
+        <!-- ۴. مهارت‌ها -->
+        <div class="section-title">My Skills</div>
+        <div class="skills-container">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Computer Networks</span>
+        </div>
+        <!-- ۵. لینک‌ها -->
+        <div class="social-links">
+            <a href="#">GitHub</a> · <a href="#">LinkedIn</a> · <a href="mailto:email@example.com">Email</a>
+        </div>
+
+        <!-- ۶. فوتر -->
+        <div class="footer">
+            © 2026 Tina
+        </div>
+    </div>
+
+</body>
+
+</html>
